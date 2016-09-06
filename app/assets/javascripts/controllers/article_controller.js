@@ -1,4 +1,3 @@
-// controllers = angular.module('controllers')
 angular.module('controllers').controller('ArticlesController', [ '$scope', 'Article', function ($scope, Article) {
   console.log('in article controller')
 
