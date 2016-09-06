@@ -2,6 +2,8 @@ app = angular.module('demoapp',[
   'templates',
   'ngRoute',
   'controllers',
+  'services',
+  'ngResource',
 ])
 
 app.config([ '$routeProvider',function ($routeProvider) {
@@ -14,3 +16,4 @@ app.config([ '$routeProvider',function ($routeProvider) {
 ])
 
 controllers = angular.module('controllers', [])
+services = angular.module('services', [])
