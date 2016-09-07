@@ -36,7 +36,6 @@ RUN bundle install
 # Add the Rails app
 ADD . /home/app/webapp
 RUN chown -R app:app /home/app/webapp
-RUN chmod 777 /home/app/webapp/tmp/cache
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
