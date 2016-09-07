@@ -22,6 +22,17 @@ Now you should be able to see the demo application by surfing to the IP of your 
 5. Precompile the assets: `rake assets:precompile`
 6. Restart server
 
+
+## Run tests
+
+The API is tested with [RSpec](http://rspec.info/). A exmaple model spec can be found in /spec/models/article_spec.rb
+
+To execute the tests folow the following steps:
+
+1. Bash into the container: `docker exec -it angularrailsdockerdemo_web_1 bash` (the name of the container could be different, find it with `docker ps`)
+2. Navaigate to the project root: `cd /home/app/webapp`
+3. Now the tests can be executed with the following command: `rspec`
+
 ## Specs
 
 * Ruby: 2.3.1p112
