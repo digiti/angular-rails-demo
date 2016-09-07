@@ -7,7 +7,7 @@ A Docker setup is included in the project. It uses a Postgresql image and a Pass
 ## Docker setup instructions
 
 1. Build the container by executing `docker-compose up` in the root of the project.
-2. When the container is build, get a bash shell for it with the following command: `docker exec -it angularrailsdockerdemo_web_1 bash` (the name of the container could be different, find it with `docker ps`)
+2. When the container is build, get a bash shell for it with the following command: `docker exec -it angularrailsdemo_web bash` (the name of the container could be different, find it with `docker ps`)
 3. Next move to the project folder: `cd /home/app/webapp`
 4. Setup the database: `rake db:create db:migrate db:seed`
 5. Install frontend dependencies by running the following command locally (needs Bower installed): `rake bower:install`
