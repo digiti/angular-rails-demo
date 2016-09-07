@@ -10,6 +10,7 @@ A Docker setup is included in the project. It uses a Postgresql image and a Pass
 2. When the container is build, get a bash shell for it with the following command: `docker exec -it angularrailsdockerdemo_web_1 bash`
 3. Next move to the project folder: `cd /home/app/webapp`
 4. Setup the database: `rake db:create db:migrate db:seed`
+5. Install frontend dependencies: `rake bower:install`
 
 Now you should be able to see the demo application by surfing to the IP of your Docker machine, most likely this is [192.168.99.100](http://192.168.99.100).
 
